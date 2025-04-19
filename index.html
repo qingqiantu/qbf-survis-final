@@ -1,14 +1,20 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>QBF Logic Game Literature Collection</title>
-    <script type="text/javascript" src="https://bibbase.org/show?bib=data/qbf_logic_review.bib&jsonp=1"></script>
+    <script src="https://bibbase.org/show?bib=data/qbf_logic_review.bib&jsonp=1"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/vis-tools/survis/master/src/survis.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/vis-tools/survis/master/src/survis.css">
   </head>
   <body>
     <h1>QBF Logic Game Literature Collection</h1>
     <p>This is a SurVis-compatible literature collection showcasing papers related to QBF-based logic games, survey tools, and educational applications.</p>
-    <div id="bibbase_data"></div>
+    <div id="paper-list"></div>
+    <script type="text/javascript">
+      survis.initialize({
+        bibfile: 'data/qbf_logic_review.bib'
+      });
+    </script>
   </body>
 </html>
